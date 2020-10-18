@@ -13,6 +13,9 @@ public class ValueUse implements ApplicationListener<ApplicationStartedEvent> {
     @Value("${junsang.name}")
     private String testName;
 
+    @Value("${junsang.full}")
+    private String testName2;
+
     @Autowired
     Environment environment;
 
@@ -20,8 +23,9 @@ public class ValueUse implements ApplicationListener<ApplicationStartedEvent> {
     public void onApplicationEvent(ApplicationStartedEvent applicationStartedEvent) {
         System.out.println("===================");
         System.out.println("Application Started");
-        System.out.println("aa : " + testName);
-        System.out.println("aa : " + environment.getProperty("junsang.name"));
+//        System.out.println("aa : " + testName);
+//        System.out.println("aa : " + testName2);
+//        System.out.println("aa : " + environment.getProperty("junsang.full"));
         System.out.println("===================");
     }
 }

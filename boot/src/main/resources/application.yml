@@ -6,3 +6,7 @@ server:
 
 junsang:
   name: tttttttttttttt
+
+  #플레이스 홀드
+ full: ${name} balk
+

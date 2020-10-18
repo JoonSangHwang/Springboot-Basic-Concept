@@ -3,3 +3,6 @@
 server:
   port: 8066
 #만약 port 번호를 0 으로 줄 경우 Port 번호가 Random 으로 설정 된다.
+
+junsang:
+  name: tttttttttttttt

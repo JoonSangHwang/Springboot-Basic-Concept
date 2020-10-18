@@ -15,6 +15,8 @@ import java.io.PrintWriter;
 public class BootApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BootApplication.class, args);
+		SpringApplication app = new SpringApplication(BootApplication.class);
+		app.addListeners(new ValueUse());
+		app.run(args);
 	}
 }

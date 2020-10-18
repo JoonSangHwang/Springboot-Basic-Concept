@@ -19,28 +19,11 @@
 	</properties>
 
 	<dependencies>
-
-		<!-- Spring Web -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-
-			<!-- 내장 톰캣 제외 -->
-			<exclusions>
-				<exclusion>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot-starter-tomcat</artifactId>
-				</exclusion>
-			</exclusions>
 		</dependency>
 
-		<!-- 제티 서버 사용 -->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-jetty</artifactId>
-		</dependency>
-
-		<!-- jUnit -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -52,7 +35,15 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>

@@ -20,6 +20,8 @@ public class ValueUse implements ApplicationListener<ApplicationStartedEvent> {
     public void onApplicationEvent(ApplicationStartedEvent applicationStartedEvent) {
         System.out.println("===================");
         System.out.println("Application Started");
+        System.out.println("aa : " + testName);
+        System.out.println("aa : " + environment.getProperty("junsang.name"));
         System.out.println("===================");
     }
 }
